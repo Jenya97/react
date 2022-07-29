@@ -19,6 +19,7 @@ class Example extends Component{
              <p>{this.props.age}</p>
              <img src={this.props.src} alt=""/>
              <p>{this.state.counter}</p>
+             <p>{this.state.counter}</p>
              <button onClick={this.add}>add</button>
              </div>
         )
