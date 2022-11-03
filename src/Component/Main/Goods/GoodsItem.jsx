@@ -26,7 +26,12 @@ export default function GoodsItem( {id,img,name,price} ) {
        <div className="addGoods_parent">
        <div className="addGoods">
       <img src={fill ? fill_heart : heart} alt="" onClick={fav_add} />
-      <div className='basket'>
+      <div className='basket'  onClick={()=>dispatch({
+         type:'ADD_BASKET',
+         payload:{
+          id:id
+        }
+       })}>
       <img src={basket} alt="" />
        <span>Shop now</span>
       </div>

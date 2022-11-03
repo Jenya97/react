@@ -2,9 +2,10 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 export default function Favorite() {
-  const favorite = useSelector((state) => state.favorite);
+const favorite = useSelector((state) => state.favorite);
 const result = [];
 const map = new Map();
+
 for (const item of favorite) {
     if(!map.has(item.id)){
         map.set(item.id, true); 
@@ -17,8 +18,6 @@ for (const item of favorite) {
         });
     }
 }
-
-
   return (
     <div>
       {result.map(i=>(

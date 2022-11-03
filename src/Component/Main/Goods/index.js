@@ -7,7 +7,6 @@ export default function Goods() {
 const products=useSelector(state=>state.products);
 const favorite=useSelector(state=>state.favorite);
 
-console.log(favorite);
   return (
     <Container>
       <GoodsParent>
